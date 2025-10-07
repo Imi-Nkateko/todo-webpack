@@ -1,17 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Todo</title>
 </head>
 
 <body>
-  <nav>
-    <a href="#">Logo</a>
+  <nav class="menu" tabindex="0">
+    <div class="smartphone-menu-trigger"></div>
+    <header class="avatar">
+      <a href="#">Logo</a>
+    </header>
+    <ul>
+      <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
+      <li tabindex="0" class="icon-customers"><span>Customers</span></li>
+      <li tabindex="0" class="icon-users"><span>Users</span></li>
+      <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+    </ul>
   </nav>
-
+  <main>
+    <div class="helper">
+      RESIZE THE WINDOW
+      <span>Breakpoints on 900px and 400px</span>
+    </div>
+  </main>
 </body>
 
 </html>
