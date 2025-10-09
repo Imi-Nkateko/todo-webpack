@@ -1,6 +1,8 @@
-//export const todo = "clean your bedroom";
 
-class todo {
+// todo.js
+import { title, description, priority, dueDate } from "./modal";
+
+export class Todo {
   constructor(title, description, dueDate, priority) {
     this.title = title;
     this.description = description;
@@ -9,5 +11,13 @@ class todo {
   }
 }
 
-const newTodo = new todo("blah", "lorem100", "2025-06-26", "important");
-console.log(newTodo);
+// Function to return a fresh Todo from current input values
+export function createNewTodo() {
+  return new Todo(
+    title.value,
+    description.value,
+    dueDate.value,
+    priority.value
+  );
+}
+
